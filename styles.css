@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  padding: 1% 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .basket-icon {
+  font-size: 3.5rem;
+  color: blue;
+}
+
+.basket-btn {
+  border: 0;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.nums-items {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  background-color: red;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 25%;
+}
+
+/*---------- Main-------- */
+ul {
+  list-style-type: none;
+}
+main {
+  padding: 1% 10%;
+}
+
+#products {
+  background-color: aliceblue;
+  min-width: 100%;
+  min-height: 100vh;
+  padding-bottom: 5%;
+}
+
+.items {
+  /* border: 1px solid black; */
+  display: flex;
+  padding: 5%;
+
+  gap: 1.5rem;
+  border-radius: 15%;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 20rem;
+  background-color: aquamarine;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5%;
+}
+.item .title {
+  margin: 10px 0;
+}
+.item .desc {
+  min-height: 3rem;
+  font-size: 0.8rem;
+  color: rgb(135, 132, 128);
+  margin-bottom: 25px;
+}
+.item span {
+  padding: 10px;
+  border-radius: 10%;
+  margin: 19px;
+}
+.item .price {
+  background-color: rgb(61, 61, 118);
+  color: white;
+  padding: 9px;
+}
+.item .rating {
+  color: rgb(135, 132, 128);
+  background-color: rgb(232, 192, 185);
+}
+.img-item img {
+  width: 100%;
+  height: 15rem;
+}
+
+/* ----- filter  */
+.filter {
+  display: flex;
+  justify-content: end;
+  margin: 20px;
+}
+.filter select {
+  font-size: 1.2rem;
+}
+
+#pagination {
+  text-align: center;
+}
+
+.pag-btn {
+  background-color: rgb(91, 91, 162);
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10%;
+}
+.show {
+  display: initial;
+}
+.hide {
+  display: none;
+}
+
+.add {
+  display: block;
+  margin: 45px auto 0 auto;
+  background-color: burlywood;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.basket-container {
+  z-index: 1;
+  position: absolute;
+  width: 80%;
+  min-height: 50vh;
+  background-color: bisque;
+}
+.basket-container h2 {
+  margin: 30px 40px 75px;
+}
+
+.basket-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 15px;
+  width: 90%;
+  height: 50%;
+  margin: 20px auto;
+  background-color: rgb(187, 149, 149);
+}
+.basket-item img {
+  width: 10%;
+  height: 5rem;
+}
+
+.basket-item button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.basket-item i {
+  color: red;
+  font-size: 1.5rem;
+}
